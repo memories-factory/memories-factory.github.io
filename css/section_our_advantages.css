@@ -1,0 +1,45 @@
+.setion_our_advanteges {
+  background-color: #92d3eb;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.setion_our_advanteges__headline {
+  font-size: 42px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  letter-spacing:0.5px;
+  margin-bottom: 110px;
+}
+.setion_our_advanteges__wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+ max-width: 1100px;
+ flex-wrap: wrap;
+}
+.card_wrapper {
+  width: 315px;
+  margin-bottom: 30px;
+}
+.card_icon {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 30px;
+}
+.card_headline {
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 25px;
+}
+.card_text {
+  line-height:25px;
+  letter-spacing:0.5px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Comfortaa", cursive;
+}

@@ -1,0 +1,103 @@
+.section_our_services {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 28px;
+  background-color:#c3ecfa;
+}
+.section_our_services__headline {
+  margin-bottom: 40px;
+  font-size: 42px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+}
+.section_our_services__number {
+  display: block;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  padding-top: 14px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  margin: 60px auto 60px;
+  border-radius: 50%;
+  position: relative;
+}
+.section_our_services__number::before{
+  opacity: .99;
+  content: '';
+  display: inline-block;
+  width: 70vw;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section_our_services__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.section_our_services__img {
+  width: 600px;
+}
+.text-headline_wrapper{
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.card_wrapper__headline {
+  width: 360px;
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+.card_wrapper__text {
+width: 360px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0.5px;
+  line-height:25px;
+}
+.section_our_services__button_wrapper {
+  width: 200px;
+  height: 55px;
+  background-color: #000;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top:115%;
+}
+.section_our_services__button {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+}
+.line-element{
+  width: 70vw;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 100px auto 0;
+}

@@ -1,0 +1,65 @@
+.section_price {
+  background-color: #c3ecfa;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+.section_price_headline {
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  margin-bottom: 70px;
+}
+.section_price__wraper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+.section_price__wraper_card {
+  width: 356px;
+  margin-top: 30px;
+  padding-top: 35px;
+  flex-wrap: wrap;
+  width: 356px;
+  height: 585px;
+  border: 2px #000 solid;
+  margin-left: 30px;
+}
+.section_price__wraper_card:nth-last-child(){
+  margin-left: 0;
+}
+.section_price__img {
+  width: 100px;
+  height: 100px;
+  margin:0 auto 30px;
+}
+.section_price__card_headline {
+  margin-bottom: 60px;
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+}
+.section_price__text {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.678);
+  font-weight: 500;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+}
+.like_h4 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+}
