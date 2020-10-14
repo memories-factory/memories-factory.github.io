@@ -41,9 +41,11 @@
   height: 1px;
   margin: 50px auto;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 .span_wrapper {
+  position: relative;
+  z-index: 3;
   margin: 0 auto 40px;
   background-color: #146e91;
   width: 180px;

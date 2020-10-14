@@ -25,15 +25,16 @@
   margin: 60px auto 60px;
   border-radius: 50%;
   position: relative;
+  z-index: 3;
 }
 .section_our_services__number::before{
-  opacity: .99;
   content: '';
   display: inline-block;
   width: 70vw;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
+  z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
