@@ -1,12 +1,17 @@
 .section_contact {
   text-align: center;
   background-color: #afe6fa;
-  padding-top: 180px;
-  padding-bottom: 150px;
+  padding: 150px 15px 120px 15px;
+}
+.section_contact__text-wrapper{
+  width: 60vw;
+  min-width: 600px;
+  margin: 0 auto;
 }
 .section_contact__headline {
   font-size: 48px;
   margin-bottom: 41px;
+  display: inline-block;
   color: #000;
   font-weight: 700;
   font-family: "Comfortaa", cursive;
@@ -14,17 +19,20 @@
 .section_contact__text {
   font-size: 22px;
   margin-bottom: 90px;
+   display: inline-block;
   color: #000;
   font-weight: 700;
   font-family: "Comfortaa", cursive;
 }
 .section_contact__form {
-  width: 600px;
+  width: 50vw;
+  min-width: 600px;
   height: 250px;
   margin: 0 auto 135px;
 }
 .form__input {
-  width: 600px;
+  width: 50vw;
+  min-width: 600px;
   height: 60px;
   font-size: 16px;
   background-color: transparent;
@@ -66,6 +74,4 @@
 }
 .section_contact__link :nth-last-child() {
   margin-right: 0;
-}
-.section_contact__icon {
 }
