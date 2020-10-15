@@ -1,0 +1,71 @@
+.section_contact {
+  text-align: center;
+  background-color: #afe6fa;
+  padding-top: 180px;
+  padding-bottom: 150px;
+}
+.section_contact__headline {
+  font-size: 48px;
+  margin-bottom: 41px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+}
+.section_contact__text {
+  font-size: 22px;
+  margin-bottom: 90px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+}
+.section_contact__form {
+  width: 600px;
+  height: 250px;
+  margin: 0 auto 135px;
+}
+.form__input {
+  width: 600px;
+  height: 60px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #8c8c8c;
+  margin-bottom: 35px;
+}
+.form__input::placeholder {
+  font-weight: 500;
+  font-family: "Comfortaa", cursive;
+  font-size: 16px;
+  color: #000;
+}
+.form__submit {
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  background-color: #259da8;
+  border: none;
+}
+.section_contact__email {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+.section_contact__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.section_contact__link {
+  margin-right: 5px;
+}
+.section_contact__link :nth-last-child() {
+  margin-right: 0;
+}
+.section_contact__icon {
+}
