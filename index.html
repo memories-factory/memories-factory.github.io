@@ -7,116 +7,12 @@
   <meta name="author" content="Kolisnyk Dmytro">
   <meta name="keywords" content="memories factory, відеомонтаж, обробка фото" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      text-decoration: none;
-      /* font-size: 0; */
-      list-style: none;
-    }
-    .header {
-      position: relative;
-      z-index: 3;
-      background-color: #000;
-      height: 115px;
-      padding-top: 42px;
-    }
-
-    .menu {
-      margin-left: 7.5vw;
-    }
-
-    .menu__list {
-      display: flex;
-      justify-content: space-between;
-      width: 30vw;
-    }
-
-    .menu__link {
-      letter-spacing: 0.5px;
-      cursor: pointer;
-      font-size: 18px;
-      color: #fff;
-      font-weight: 700;
-      font-family: "Comfortaa", cursive;
-      border-bottom: 2px solid transparent;
-    }
-
-    .logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .logo__img {
-      cursor: pointer;
-      width: 150px;
-      height: 100px;
-    }
-
-    .menu__link:hover {
-      transition: 500ms cubic-bezier(1, 0.12, 0.83, 0.67);
-      border-radius: 5%;
-      border-bottom: 2px solid #fff;
-    }
-
-    .section_background {
-      height: 90vh;
-      text-align: center;
-      background-image: url('../img/background.webp');
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-
-    .section_background::before {
-      content: '';
-      background-image: -webkit-linear-gradient(rgba(140, 113, 250, 0.5), rgba(27, 98, 112, 0.6));
-      display: block;
-      position: absolute;
-      height: 90vh;
-      width: 100%;
-    }
-
-    .section_background__headline {
-      margin-bottom: 38px;
-      font-size: 65px;
-      font-weight: 700;
-      font-family: "Comfortaa", cursive;
-      letter-spacing: 0.5px;
-    }
-
-    .section_background__text {
-      color: #fff;
-      font-size: 24px;
-      font-weight: 600;
-      font-family: "Comfortaa", cursive;
-      letter-spacing: 0.5px;
-    }
-
-    .section_background__content {
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 60vw;
-      max-width: 1200px;
-      flex-wrap: wrap;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    img {
-      overflow: hidden;
-    }
-  </style>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./section_background.css">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="preload" href="./reset.css" as="style">
+  <link rel="preload" href="./header.css" as="style">
+  <link rel="preload" href="./section_background.css" as="style">
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="icon" href="./img/camera.webp" />
   <title>Студія фото та відеомонтажу</title>
@@ -124,6 +20,11 @@
 
 <body>
   <header class="header">
+    <div class="header__wrapper">
+      <span class="header__btn"></span>
+      <span class="header__btn"></span>
+      <span class="header__btn header__btn--margin-none"></span>
+    </div>
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item">
@@ -142,6 +43,7 @@
     </nav>
     <a href="https://www.instagram.com/memories.factory_/" class="logo"><img src="./img/logo_photo.webp"
         alt="logo_photo" class="logo__img" /></a>
+
   </header>
 
   <main>
@@ -171,9 +73,9 @@
         <a href="#our_services" class="section_if_you__button">Тоді наші послуги - для вас</a>
       </div>
     </section>
-    <section class="setion_our_advanteges">
-      <h2 class="setion_our_advanteges__headline">Наші переваги</h2>
-      <div class="setion_our_advanteges__wrapper">
+    <section class="section_our_advantages">
+      <h2 class="section_our_advantages__headline">Наші переваги</h2>
+      <div class="section_our_advantages__wrapper">
         <div class="card_wrapper">
           <img src="./icons/star.svg" alt="no_icon" class="card_icon" />
           <h3 class="card_headline">Якість</h3>
@@ -314,7 +216,7 @@
         </p>
       </div>
     </section>
-    <section class="section_contact">
+    <section id="end" class="section_contact">
       <div class="section_contact__text-wrapper">
         <h2 class="section_contact__headline">
           Створіть власний фільм прямо зараз

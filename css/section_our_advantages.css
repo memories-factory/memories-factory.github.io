@@ -1,23 +1,22 @@
-.setion_our_advanteges {
+.section_our_advantages {
   background-color: #92d3eb;
   text-align: center;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding: 45px 10px;
 }
-.setion_our_advanteges__headline {
+.section_our_advantages__headline {
   font-size: 42px;
   color: #000;
   font-weight: 700;
   font-family: "Comfortaa", cursive;
-  letter-spacing:0.5px;
+  letter-spacing: 0.5px;
   margin-bottom: 110px;
 }
-.setion_our_advanteges__wrapper {
+.section_our_advantages__wrapper {
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
- max-width: 1100px;
- flex-wrap: wrap;
+  max-width: 1100px;
+  flex-wrap: wrap;
 }
 .card_wrapper {
   width: 315px;
@@ -36,10 +35,20 @@
   margin-bottom: 25px;
 }
 .card_text {
-  line-height:25px;
-  letter-spacing:0.5px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
   font-size: 16px;
   color: #000;
   font-weight: 500;
   font-family: "Comfortaa", cursive;
+}
+@media (max-width: 540px) {
+  .section_our_advantages__headline {
+    font-size: 32px;
+    color: #000;
+    font-weight: 700;
+    font-family: "Comfortaa", cursive;
+    letter-spacing: 0.5px;
+    margin-bottom: 60px;
+  }
 }

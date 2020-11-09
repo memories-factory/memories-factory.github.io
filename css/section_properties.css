@@ -1,11 +1,11 @@
 .section_properties {
   background-color: #92d3eb;
-  padding-top: 150px;
-  padding-bottom: 105px;
+  padding: 150px 32px 105px;
 }
 .section_properties__img {
-  width: 550px;
-  height: 550px;
+  max-width: 550px;
+  max-height: 550px;
+  object-fit: contain;
 }
 .section_properties__headline {
   font-size: 42px;
@@ -42,4 +42,26 @@
   padding-top: 120px;
   width: 560px;
   text-align: center;
+}
+@media( max-width:1200px){
+.section_properties__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.section_properties {
+  background-color: #92d3eb;
+  padding: 50px 0 50px;
+}
+.section_properties__text-wrapper {
+  padding-top: 90px;
+}
+.section_properties__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+}
+@media(max-width:540px){
+
 }

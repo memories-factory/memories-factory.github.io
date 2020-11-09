@@ -1,0 +1,139 @@
+.header {
+  position: relative;
+  z-index: 3;
+  background-color: #000;
+  height: 15vh;
+  min-height: 110px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  width: 37vw;
+  max-width: 600px;
+}
+.menu__link {
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  border-bottom: 2px solid transparent;
+}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo__img {
+  cursor: pointer;
+  width: 150px;
+  height: 100px;
+}
+.menu__link:hover {
+  transition: 400ms linear;
+  border-radius: 2px;
+  border-bottom: 2px solid #fff;
+}
+.header__wrapper {
+  display: none;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 5;
+}
+.header__btn {
+  width: 35px;
+  position: absolute;
+  height: 3px;
+  display: block;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.header__btn:nth-child(2) {
+  top: 11px;
+}
+.header__btn--margin-none {
+  bottom: 0;
+}
+@media (max-width: 1200px) {
+  .header {
+    justify-content: flex-end;
+    padding: 32px;
+  }
+
+  .menu {
+    background-color: #000;
+    position: fixed;
+    width: 35vw;
+    top: 0;
+    right: -35vw;
+    height: 100vh;
+    display: flex;
+    opacity: 0.8;
+  }
+  .menu__list {
+    display: flex;
+    padding-top: 0;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 4;
+    width: 100%;
+    max-width: 600px;
+    height: 50%;
+    margin: 15vh 32px;
+  }
+  .menu__link {
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  .header__wrapper {
+    display: block;
+    position: relative;
+  }
+  .header__wrapper:hover > .header__btn:nth-child(1) {
+    transform: rotate(45deg);
+    transition: 400ms linear;
+    top: 11px;
+    width: 45px;
+  }
+  .header__wrapper:hover > .header__btn:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: 400ms linear;
+    bottom: 11px;
+    width: 45px;
+  }
+  .header__wrapper:hover > .header__btn:nth-child(2) {
+    background-color: transparent;
+    transition: 300ms linear;
+    margin: 0;
+  }
+  .header__wrapper:hover + .menu {
+    right: 0;
+    transition: 300ms linear;
+  }
+  .menu:hover {
+    right: 0;
+  }
+}
+@media (max-width: 540px) {
+  .header {
+    padding: 16px;
+  }
+  .menu__link {
+    font-size: 20px;
+  }
+  .menu {
+    width: 45vw;
+    right: -45vw;
+  }
+  .menu__list {
+    margin: 15vh 16px;
+  }
+}

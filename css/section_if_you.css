@@ -1,6 +1,6 @@
 .section_if_you {
   background-color: #c3ecfa;
-  padding: 30px 90px 55px;
+  padding: 48px 90px 55px;
 }
 .section_if_you__headline {
   text-align: center;
@@ -8,47 +8,88 @@
   font-weight: 700;
   font-family: "Comfortaa", cursive;
   margin-bottom: 90px;
-  
 }
-.section_if_you__wrapper{
+.section_if_you__wrapper {
   max-width: 665px;
   text-align: left;
   margin: 0 auto;
-
 }
 .section_if_you__text {
   position: relative;
+  left: 55px;
   letter-spacing: 0.2px;
   font-size: 22px;
   font-weight: 700;
   font-family: "Comfortaa", cursive;
   margin-bottom: 70px;
 }
-.section_if_you__text::before{
+.section_if_you__text::before {
   content: "";
   display: inline-block;
-  background-image: url('../icons/image.svg');
+  background-image: url("../icons/image.svg");
+  position: absolute;
   height: 55px;
   width: 55px;
-  position: absolute;
-  top:-10px ;
-  left:-80px ;
+  top: -10px;
+  left: -80px;
 }
-.button__wrapper{
+.button__wrapper {
   cursor: pointer;
   margin: 55px auto 0;
   background-color: #259da8;
+  padding: 10px;
+  text-align: center;
+  width: 40vw;
+  max-width: 590px;
+  min-width: 370px;
+  height: 80px;
+  border-radius: 50px;
+  border: 3px solid #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  width:40vw;
-  height: 80px;
-  border-radius: 50px; ;
-  border: 3px solid #000;
 }
 .section_if_you__button {
   font-size: 26px;
   color: #000;
   font-weight: 700;
   font-family: "Comfortaa", cursive;
+}
+@media (max-width: 540px) {
+  .section_if_you {
+    padding: 30px 30px 30px;
+  }
+  .section_if_you__headline {
+    font-size: 35px;
+    margin-bottom: 70px;
+  }
+  .section_if_you__wrapper {
+    max-width: 400px;
+    width: 70vw;
+  }
+  .section_if_you__text {
+    font-size: 18px;
+    left: 25px;
+    margin-bottom: 40px;
+  }
+  .section_if_you__text::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../icons/image.svg");
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: -5px;
+    left: -50px;
+  }
+  .button__wrapper {
+    margin: 35px auto 0;
+    width: 70vw;
+    min-width: 240px;
+    height: 60px;
+    border: 2px solid #000;
+  }
+  .section_if_you__button {
+    font-size: 18px;
+  }
 }
